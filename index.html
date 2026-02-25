@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feather Friendly® | Bird Collision Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -20,7 +20,7 @@
                         }
                     },
                     fontFamily: {
-                        sans: ['Montserrat', 'sans-serif'],
+                        sans: ['Poppins', 'sans-serif'],
                     },
                 }
             }
@@ -29,7 +29,7 @@
     <style>
         body {
             scroll-behavior: smooth;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
         .gallery-item {
@@ -67,9 +67,13 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-24">
                 <div class="lg:col-span-7">
                     <div class="section-accent"></div>
-                    <h1 class="text-5xl md:text-7xl font-800 text-ff-dark mb-6 tracking-tight">
-                        Feather<span class="text-ff-green">Friendly</span>®
-                    </h1>
+                <!-- Feather Friendly Uploaded Logo -->
+                <div class="mb-8">
+                    <img src="Images/FF Logo.png" alt="Feather Friendly® Logo" class="h-24 w-auto object-contain"
+                        onerror="this.style.display='none'; this.after('Logo File (FF_Logo.png) Not Found')">
+                    <p class="text-[10px] tracking-[0.2em] uppercase font-bold text-ff-dark mt-4 opacity-80">For the Prevention of Bird
+                        Collisions</p>
+                </div>
                     <h2 class="text-3xl md:text-4xl font-700 text-ff-blue mb-8">
                         Standard Markers
                     </h2>
@@ -98,17 +102,17 @@
                         </h3>
                         <div class="space-y-8">
                             <div>
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-ff-blue font-800 mb-2">Primary
+                                <p class="text-[13px] uppercase tracking-[0.2em] text-ff-blue font-800 mb-2">Primary
                                     Pattern</p>
                                 <p class="text-xl font-600">2" x 2" Symmetry Grid</p>
                             </div>
                             <div>
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-ff-blue font-800 mb-2">Visual Cues
+                                <p class="text-[13px] uppercase tracking-[0.2em] text-ff-blue font-800 mb-2">Visual Cues
                                 </p>
                                 <p class="text-xl font-600">White, Grey, or Black</p>
                             </div>
                             <div>
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-ff-blue font-800 mb-2">
+                                <p class="text-[13px] uppercase tracking-[0.2em] text-ff-blue font-800 mb-2">
                                     Installation</p>
                                 <p class="text-xl font-600">Exterior Surface (1)</p>
                             </div>
@@ -150,9 +154,11 @@
             <div class="flex flex-col lg:flex-row-reverse gap-20 items-center mb-20">
                 <div class="lg:w-1/2">
                     <div class="section-accent"></div>
-                    <h2 class="text-5xl md:text-7xl font-800 text-ff-dark mb-6 tracking-tight leading-none">
-                        Bird Divert<span class="text-ff-blue">™</span>
-                    </h2>
+                    <!-- Bird Divert Uploaded Logo -->
+                    <div class="mb-8">
+                        <img src="Images/Logo with tagline.png" alt="Bird Divert™ Logo" class="h-16 w-auto object-contain"
+                            onerror="this.style.display='none'; this.after('Logo File (BD_Logo.png) Not Found')">
+                    </div>
                     <h3 class="text-2xl md:text-3xl font-700 text-ff-green mb-8 uppercase tracking-widest">
                         UV Film Technology
                     </h3>
