@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feather Friendly® | Bird Collision Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -17,7 +18,8 @@
                             blue: '#80C7DD',
                             dark: '#4C4C4E',
                             light: '#D9D9D9',
-                            yellow: '#f7cc6c'
+                            yellow: '#f7cc6c',
+                            red: '#C23E3E'
                         }
                     },
                     fontFamily: {
@@ -31,6 +33,13 @@
         body {
             scroll-behavior: smooth;
             font-family: 'Poppins', sans-serif;
+        }
+
+        .section-accent {
+            height: 4px;
+            width: 60px;
+            background-color: #7AB642;
+            margin-bottom: 1.5rem;
         }
 
         .gallery-item {
@@ -50,13 +59,6 @@
         .gallery-item:hover img {
             transform: scale(1.08);
         }
-
-        .section-accent {
-            height: 4px;
-            width: 60px;
-            background-color: #7AB642;
-            margin-bottom: 1.5rem;
-        }
     </style>
 </head>
 
@@ -65,194 +67,479 @@
     <!-- Section 1: Standard Markers -->
     <section class="min-h-screen py-24 px-6 md:px-12">
         <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-24">
-                <div class="lg:col-span-7">
-                    <div class="section-accent"></div>
+            <!-- Intro Text -->
+            <div class="mb-16 max-w-3xl mx-auto flex flex-col items-center text-center">
+                <div class="section-accent"></div>
                 <!-- Feather Friendly Uploaded Logo -->
                 <div class="mb-8">
-                    <img src="Images/FF Logo.png" alt="Feather Friendly® Logo" class="h-24 w-auto object-contain"
-                        onerror="this.style.display='none'; this.after('Logo File (FF_Logo.png) Not Found')">
-                    <p class="text-[10px] tracking-[0.2em] uppercase font-bold text-ff-dark mt-4 opacity-80">For the Prevention of Bird
-                        Collisions</p>
+                    <img src="Images/FF Logo.png" alt="Feather Friendly® Logo" class="h-16 w-auto object-contain"
+                        onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Image_placeholder.svg/200px-Image_placeholder.svg.png'; this.style.opacity='0.5'">
                 </div>
-                    <h2 class="text-3xl md:text-4xl font-700 text-ff-blue mb-8">
-                        Visual Markers
-                    </h2>
-                    <p class="text-xl text-ff-dark/80 mb-10 leading-relaxed max-w-2xl font-medium">
-                        Scientifically proven marker-based technology that makes glass visible to birds while
-                        maintaining clear views for humans.
-                    </p>
+            </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                        <div class="p-6 rounded-2xl bg-ff-light/30 border-l-4 border-ff-green">
-                            <h4 class="font-bold text-ff-dark text-lg mb-2">95% Effective</h4>
-                            <p class="text-sm text-ff-dark/70">Tested & Approved
-                            by ABC and DR. Daniel Klem, Jr.</p>
-                        </div>
-                        <div class="p-6 rounded-2xl bg-ff-light/30 border-l-4 border-ff-blue">
-                            <h4 class="font-bold text-ff-dark text-lg mb-2">Long-Term Durability</h4>
-                            <p class="text-sm text-ff-dark/70">Designed to last 20+ years in extreme weather.</p>
-                        </div>
-                        <!-- <div class="p-6 rounded-2xl bg-ff-light/30 border-l-4 border-ff-yellow">
-                            <h4 class="font-bold text-ff-dark text-lg mb-2">Tested and Approved</h4>
-                            <p class="text-sm text-ff-dark/70">by ABC and Dr. Daniel Klem, Jr.</p>
-                        </div> -->
-                        
+            <!-- Title for Red Containers -->
+            <h2 class="text-2xl md:text-3xl font-extrabold text-black text-center mb-10">
+                What Sets Feather Friendly Evolution Apart From Other Materials
+            </h2>
+
+            <!-- Red Containers - DESKTOP LAYOUT (Hidden on mobile) -->
+            <div class="hidden lg:flex flex-col w-full mb-10 drop-shadow-xl">
+                <!-- Top Row -->
+                <div class="flex justify-between w-full relative z-10">
+                    <!-- Card 1 -->
+                    <div
+                        class="w-[31%] bg-ff-red text-white p-8 rounded-3xl rounded-br-none transition-transform hover:-translate-y-1">
+                        <h3 class="font-bold text-xl mb-4">Unmatched Durability</h3>
+                        <p class="text-white/90 leading-relaxed font-medium">Lasts 20+ years – that's over 40 bird
+                            migration cycles!</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="w-[31%] bg-ff-red text-white p-8 rounded-3xl rounded-b-none transition-transform hover:-translate-y-1">
+                        <h3 class="font-bold text-xl mb-4">PFAS-Free</h3>
+                        <p class="text-white/90 leading-relaxed font-medium">Manufactured without Per- and
+                            Polyfluoroalkyl Substances (PFAS), supporting a more sustainable choice for the environment.
+                        </p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="w-[31%] bg-ff-red text-white p-8 rounded-3xl rounded-bl-none transition-transform hover:-translate-y-1">
+                        <h3 class="font-bold text-xl mb-4">Low Environmental Footprint</h3>
+                        <p class="text-white/90 leading-relaxed font-medium">Long lifespan reduces waste and the need
+                            for frequent replacements.</p>
                     </div>
                 </div>
-
-            <div class="lg:col-span-5">
-                <div class="bg-ff-dark text-white rounded-[2rem] p-10 shadow-2xl">
-                    <h3 class="font-800 text-2xl mb-8 flex items-center gap-3">
-                        <span class="w-2 h-8 bg-ff-green"></span>
-                        Pro Features
-                    </h3>
-                    <div class="space-y-8">
-                        <div>
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-ff-blue font-800 mb-2">Resilience</p>
-                            <p class="text-xl font-600">Unmatched Durability</p>
-                        </div>
-                        <div>
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-ff-blue font-800 mb-2">Sustainability</p>
-                            <p class="text-xl font-600">Low Environ Footprint</p>
-                        </div>
-                        <div>
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-ff-blue font-800 mb-2">Versatility</p>
-                            <p class="text-xl font-600">Expanded Installation Range</p>
-                        </div>
-                        <div>
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-ff-blue font-800 mb-2">Design Options</p>
-                            <p class="text-xl font-600">Available in 10 Standard Patterns</p>
-                        </div>
+                <!-- Bottom Row -->
+                <div class="flex justify-center gap-[3.5%] w-full relative z-20 -mt-1">
+                    <!-- Card 4 -->
+                    <div
+                        class="w-[31%] bg-ff-red text-white p-8 rounded-3xl rounded-t-none transition-transform hover:translate-y-1">
+                        <h3 class="font-bold text-xl mb-4">Quality Commitment</h3>
+                        <p class="text-white/90 leading-relaxed font-medium">Supported by a 15-year warranty, showcasing
+                            our dedication to longevity</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div
+                        class="w-[31%] bg-ff-red text-white p-8 rounded-3xl rounded-t-none transition-transform hover:translate-y-1">
+                        <h3 class="font-bold text-xl mb-4">Expanded Installation Range</h3>
+                        <p class="text-white/90 leading-relaxed font-medium">Can be installed in temperatures as low as
+                            -20°C, allowing for year-round installation, even in colder climates</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Red Containers - MOBILE LAYOUT (Hidden on desktop) -->
+            <div class="flex lg:hidden flex-col w-full max-w-[450px] mx-auto mb-10 drop-shadow-xl">
+                <!-- Card 1 -->
+                <div class="w-[88%] self-start bg-ff-red text-white p-6 rounded-3xl rounded-br-none relative z-50">
+                    <h3 class="font-bold text-xl mb-3">Unmatched Durability</h3>
+                    <p class="text-white/90 leading-relaxed font-medium text-sm">Lasts 20+ years – that's over 40 bird
+                        migration cycles!</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="w-[88%] self-end bg-ff-red text-white p-6 rounded-3xl rounded-l-none -mt-4 relative z-40">
+                    <h3 class="font-bold text-xl mb-3">PFAS-Free</h3>
+                    <p class="text-white/90 leading-relaxed font-medium text-sm">Manufactured without Per- and
+                        Polyfluoroalkyl Substances (PFAS), supporting a more sustainable choice for the environment.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="w-[88%] self-start bg-ff-red text-white p-6 rounded-3xl rounded-r-none -mt-4 relative z-30">
+                    <h3 class="font-bold text-xl mb-3">Low Environmental Footprint</h3>
+                    <p class="text-white/90 leading-relaxed font-medium text-sm">Long lifespan reduces waste and the
+                        need for frequent replacements.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="w-[88%] self-end bg-ff-red text-white p-6 rounded-3xl rounded-l-none -mt-4 relative z-20">
+                    <h3 class="font-bold text-xl mb-3">Quality Commitment</h3>
+                    <p class="text-white/90 leading-relaxed font-medium text-sm">Supported by a 15-year warranty,
+                        showcasing our dedication to longevity</p>
+                </div>
+                <!-- Card 5 -->
+                <div
+                    class="w-[88%] self-start bg-ff-red text-white p-6 rounded-3xl rounded-tr-none -mt-4 relative z-10">
+                    <h3 class="font-bold text-xl mb-3">Expanded Installation Range</h3>
+                    <p class="text-white/90 leading-relaxed font-medium text-sm">Can be installed in temperatures as low
+                        as -20°C, allowing for year-round installation, even in colder climates</p>
+                </div>
+            </div>
+
+            <!-- Learn More Button -->
+            <!-- <div class="flex justify-center mb-24">
+                <button
+                    class="bg-ff-green text-white font-bold py-3 px-10 rounded-md hover:bg-green-600 transition-colors shadow-md">
+                    Learn more about Evolution
+                </button>
+            </div> -->
+
+            <!-- The Feather Friendly Edge -->
+            <div class="flex flex-col lg:flex-row items-center gap-16 mt-16">
+                <!-- Left Side Image -->
+                <div class="lg:w-5/12 flex justify-center items-center">
+                    <img src="Images/roll.png" alt="Feather Friendly Roll"
+                        class="w-full max-w-[400px] object-contain drop-shadow-2xl"
+                        onerror="this.src='https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=400'; this.classList.add('rounded-lg')">
+                </div>
+
+                <!-- Right Side List -->
+                <div class="lg:w-7/12">
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-black mb-10">The Feather Friendly Edge</h3>
+
+                    <ul class="space-y-8">
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 flex-shrink-0 w-6 h-6">
+                                <img src="Images/material-symbols_order-approve-outline-sharp.png" alt="Tested Icon"
+                                    class="w-full h-full object-contain"
+                                    onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                            </div>
+                            <p class="font-bold text-[15px] leading-relaxed">Tested and approved by American Bird
+                                Conservancy, Dr. Daniel Klem Jr. Recommended by conservation organizations and
+                                environmental advocacy groups worldwide.</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 flex-shrink-0 w-6 h-6">
+                                <img src="Images/la_certificate.png" alt="Reduced Icon"
+                                    class="w-full h-full object-contain"
+                                    onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                            </div>
+                            <p class="font-bold text-[15px] leading-relaxed">Bird collisions reduced by over 95%,
+                                demonstrated by independent studies and real-world results.</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 flex-shrink-0 w-6 h-6">
+                                <img src="Images/gridicons_customize.png" alt="Patterns Icon"
+                                    class="w-full h-full object-contain"
+                                    onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                            </div>
+                            <p class="font-bold text-[15px] leading-relaxed">Variety of patterns and colours that are
+                                customizable to any project size and need.</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 flex-shrink-0 w-6 h-6">
+                                <img src="Images/fluent_grid-dots-20-regular.png" alt="Thermal Icon"
+                                    class="w-full h-full object-contain"
+                                    onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                            </div>
+                            <p class="font-bold text-[15px] leading-relaxed">No thermal load - markers are not full film
+                                and cover minimal glass surface</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 flex-shrink-0 w-6 h-6">
+                                <img src="Images/mingcute_safety-certificate-fill.png" alt="Standards Icon"
+                                    class="w-full h-full object-contain"
+                                    onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                            </div>
+                            <p class="font-bold text-[15px] leading-relaxed">Meet & exceed published bird-safe standards
+                                and guidelines worldwide.</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 flex-shrink-0 w-6 h-6">
+                                <img src="Images/globe.png" alt="Network Icon" class="w-full h-full object-contain"
+                                    onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                            </div>
+                            <p class="font-bold text-[15px] leading-relaxed">Large, authorized dealer-applicator network
+                                across North America and beyond.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ten Standard Patterns -->
+            <div class="mt-24">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-black mb-4">Ten Standard Patterns</h2>
+                    <p class="text-gray-600 font-medium">Choose from 10 standard patterns or make your project unique
+                        with endless customizable designs and colors</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4 lg:gap-6">
+                    <div class="flex flex-col items-center">
+                        <img src="Images/Symmetry_pattern.png" alt="Symmetry Pattern"
+                            class="w-full h-auto object-contain rounded-xl"
+                            onerror="this.src='https://placehold.co/200x200/e0f2f7/64748b?text=Symmetry'">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="Images/Serenity_from_Patterns.png" alt="Serenity Pattern"
+                            class="w-full h-auto object-contain rounded-xl"
+                            onerror="this.src='https://placehold.co/200x200/e0f2f7/64748b?text=Serenity'">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="Images/Harmony_pattern.png" alt="Harmony Pattern"
+                            class="w-full h-auto object-contain rounded-xl"
+                            onerror="this.src='https://placehold.co/200x200/e0f2f7/64748b?text=Harmony'">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="Images/Horizon_pattern.png" alt="Horizon Pattern"
+                            class="w-full h-auto object-contain rounded-xl"
+                            onerror="this.src='https://placehold.co/200x200/e0f2f7/64748b?text=Horizon'">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="Images/Rain.png" alt="Rain Pattern" class="w-full h-auto object-contain rounded-xl"
+                            onerror="this.src='https://placehold.co/200x200/e0f2f7/64748b?text=Rain'">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="Images/Unity pattern.png" alt="Unity Pattern"
+                            class="w-full h-auto object-contain rounded-xl"
+                            onerror="this.src='https://placehold.co/200x200/e0f2f7/64748b?text=Unity'">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="Images/Sequence.png" alt="Sequence Pattern"
+                            class="w-full h-auto object-contain rounded-xl"
+                            onerror="this.src='https://placehold.co/200x200/e0f2f7/64748b?text=Sequence'">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="Images/Affinity.png" alt="Affinity Pattern"
+                            class="w-full h-auto object-contain rounded-xl"
+                            onerror="this.src='https://placehold.co/200x200/e0f2f7/64748b?text=Affinity'">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="Images/Sunburst.png" alt="Sunburst Pattern"
+                            class="w-full h-auto object-contain rounded-xl"
+                            onerror="this.src='https://placehold.co/200x200/e0f2f7/64748b?text=Sunburst'">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="Images/Balance_pattern.png" alt="Balance Pattern"
+                            class="w-full h-auto object-contain rounded-xl"
+                            onerror="this.src='https://placehold.co/200x200/e0f2f7/64748b?text=Balance'">
+                    </div>
+                </div>
+
+                <div class="text-center mt-10">
+                    <a href="#"
+                        class="text-red-600 hover:text-red-800 font-bold underline underline-offset-4 decoration-1">Download
+                        Spec Sheet (PDF)</a>
+                </div>
             </div>
 
             <!-- Gallery 1 -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="gallery-item shadow-xl border border-ff-light">
-                    <img src="Images/MCOne.jpg"
-                        alt="DIY Kit">
+                    <img src="Images/MCOne.jpg" alt="DIY Kit"
+                        onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80'">
                     <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-ff-dark to-transparent">
                         <p class="text-white font-bold tracking-wide">McCormick Place</p>
                     </div>
                 </div>
                 <div class="gallery-item shadow-xl border border-ff-light">
-                    <img src="Images/MCTwo.png"
-                        alt="Commercial Application">
+                    <img src="Images/MCTwo.jpg" alt="Commercial Application"
+                        onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80'">
                     <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-ff-dark to-transparent">
                         <p class="text-white font-bold tracking-wide">McCormick Place</p>
                     </div>
                 </div>
                 <div class="gallery-item shadow-xl border border-ff-light">
-                    <img src="Images/MCThree.jpg"
-                        alt="Marker Pattern">
+                    <img src="Images/MCThree.jpg" alt="Marker Pattern"
+                        onerror="this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80'">
                     <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-ff-dark to-transparent">
                         <p class="text-white font-bold tracking-wide">McCormick Place</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <!-- Section 2: Bird Divert UV -->
-    <section class="min-h-screen py-24 px-6 md:px-12 bg-ff-light/20 border-t border-ff-light">
+    <section class="min-h-screen py-24 px-6 md:px-12 bg-white">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col lg:flex-row-reverse gap-20 items-center mb-20">
-                <div class="lg:w-1/2">
-                    <div class="section-accent"></div>
-                    <!-- Bird Divert Uploaded Logo -->
-                    <div class="mb-8">
-                        <img src="Images/Logo with tagline.png" alt="Bird Divert™ Logo" class="h-16 w-auto object-contain"
-                            onerror="this.style.display='none'; this.after('Logo File (BD_Logo.png) Not Found')">
-                    </div>
-                    <h3 class="text-2xl md:text-3xl font-700 text-ff-green mb-8 uppercase tracking-widest">
-                        UV Markers 
-                    </h3>
-                    <p class="text-xl text-ff-dark/80 mb-10 leading-relaxed font-medium">
-                        The professional-grade solution for optically clear protection. Utilizing the UV spectrum that
-                        birds see but humans don't, providing an invisible barrier for modern architecture.
-                    </p>
 
-                    <div class="flex flex-wrap gap-4 mb-10">
-                        <span
-                            class="px-4 py-2 bg-white border border-ff-blue text-ff-blue font-bold rounded-lg text-sm italic">98%
-                            Light Transmission</span>
-                        <span
-                            class="px-4 py-2 bg-white border border-ff-green text-ff-green font-bold rounded-lg text-sm italic">Threat
-                            Factor 18</span>
-                        <span
-                            class="px-4 py-2 bg-white border border-ff-dark text-ff-dark font-bold rounded-lg text-sm italic">LEED
-                            Compatible</span>
+            <!-- Bird Divert Uploaded Logo -->
+            <div class="mb-12 flex justify-center">
+                <img src="Images/BD logo.png" alt="Bird Divert™ Logo" class="h-16 w-auto object-contain"
+                    onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Image_placeholder.svg/200px-Image_placeholder.svg.png'; this.style.opacity='0.5'">
+            </div>
+
+            <!-- Green Containers with Icons -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24 justify-items-center">
+                <!-- Card 1 -->
+                <div
+                    class="w-full max-w-[280px] bg-ff-green rounded-xl flex flex-col items-center p-8 text-center text-white border-b-[20px] border-ff-blue shadow-lg pt-10 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="mb-6 w-16 h-16 flex justify-center items-center">
+                        <img src="Images/icons-04.png" alt="Markers" class="w-full h-full object-contain"
+                            onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                    </div>
+                    <div class="w-10 h-1 bg-white mb-6"></div>
+                    <p class="font-bold text-lg leading-snug">Not a full film. Only the markers remain on the glass</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="w-full max-w-[280px] bg-ff-green rounded-xl flex flex-col items-center p-8 text-center text-white border-b-[20px] border-ff-blue shadow-lg pt-10 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="mb-6 w-16 h-16 flex justify-center items-center">
+                        <img src="Images/icons-03.png" alt="Guidelines" class="w-full h-full object-contain"
+                            onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                    </div>
+                    <div class="w-10 h-1 bg-white mb-6"></div>
+                    <p class="font-bold text-lg leading-snug">Meets and Exceeds bird-safe guidelines</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="w-full max-w-[280px] bg-ff-green rounded-xl flex flex-col items-center p-8 text-center text-white border-b-[20px] border-ff-blue shadow-lg pt-10 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="mb-6 w-16 h-16 flex justify-center items-center">
+                        <img src="Images/icons-02.png" alt="UV Absorption" class="w-full h-full object-contain"
+                            onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                    </div>
+                    <div class="w-10 h-1 bg-white mb-6"></div>
+                    <p class="font-bold text-lg mb-1">UV absorption</p>
+                    <p class="font-black text-[2.75rem] leading-none mb-2">420</p>
+                    <p class="font-bold text-base">nanometers</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="w-full max-w-[280px] bg-ff-green rounded-xl flex flex-col items-center p-8 text-center text-white border-b-[20px] border-ff-blue shadow-lg pt-10 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="mb-6 w-16 h-16 flex justify-center items-center">
+                        <img src="Images/icons-01.png" alt="Durability" class="w-full h-full object-contain"
+                            onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                    </div>
+                    <div class="w-10 h-1 bg-white mb-6"></div>
+                    <p class="font-bold text-lg mb-1">Durability & Longevity</p>
+                    <p class="font-black text-[2.75rem] leading-none mb-2">10</p>
+                    <p class="font-bold text-base">Years</p>
+                </div>
+            </div>
+
+            <!-- How Does Bird Divert UV Work -->
+            <div class="bg-gray-50 rounded-3xl p-8 lg:p-12 mb-16">
+                <div class="flex flex-col lg:flex-row gap-12 items-center">
+                    <!-- Left: Graphic -->
+                    <div class="lg:w-2/5 flex justify-center w-full">
+                        <img src="Images/visionchart.png" alt="Human vs Bird Vision Chart"
+                            class="w-full max-w-[350px] object-contain"
+                            onerror="this.src='https://placehold.co/400x400/e2e8f0/64748b?text=Vision+Chart'">
                     </div>
 
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4">
-                            <div class="w-3 h-3 bg-ff-green rotate-45"></div>
-                            <span class="font-bold">Proprietary UV-Absorbing Dot Matrix</span>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-3 h-3 bg-ff-blue rotate-45"></div>
-                            <span class="font-bold">Maintains Pristine Building Aesthetics</span>
+                    <!-- Right: Text and Split Image -->
+                    <div class="lg:w-3/5">
+                        <h3 class="text-3xl font-extrabold mb-4 text-black">How Does Bird Divert™ UV work ?</h3>
+                        <p class="font-bold text-[15px] mb-3 text-black">Did you know that most birds can see UV light,
+                            while humans can't?</p>
+                        <p class="text-[14px] text-gray-700 leading-relaxed mb-8 font-medium">Bird Divert uses
+                            ultraviolet (UV) reflective technology that takes advantage of most birds' ability to see in
+                            the UV spectrum, a capability humans lack. The markers are designed to reflect UV
+                            wavelengths up to 420 nanometers, creating a pattern birds recognize as a barrier, while
+                            remaining practically undetectable to the human eye.</p>
+
+                        <div class="mt-8 w-full max-w-[500px]">
+                            <img src="Images/humanbirdvision.png" alt="Human vs Bird Vision Comparison"
+                                class="w-full object-contain"
+                                onerror="this.src='https://placehold.co/600x300/e2e8f0/64748b?text=Human+and+Bird+Vision'">
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="lg:w-1/2">
-                    <div class="relative group p-4 bg-white rounded-[2.5rem] shadow-2xl border border-ff-light">
-                        <div class="relative overflow-hidden rounded-[2rem]">
-                        <img src="Images/building uv 1.png" alt="Bird Divert Simulation" class="w-full h-auto max-h-[90vh] object-contain" />
-                            <div class="absolute inset-0 bg-ff-blue/10 pointer-events-none"></div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <div
-                                    class="bg-ff-dark/90 backdrop-blur-md p-8 rounded-2xl border border-white/20 text-white max-w-sm text-center">
-                                    <p class="text-xs uppercase tracking-widest font-800 text-ff-blue mb-2">Bird
-                                        Perspective</p>
-                                    <p class="font-600">The UV Markers appears as a dense grid of violet-black obstacles to
-                                        birds.</p>
+            <!-- Why Choose Bird Divert -->
+            <div class="bg-[#f0f7fa] rounded-3xl p-8 lg:p-12">
+                <div class="flex flex-col lg:flex-row gap-12 items-center">
+                    <!-- Left: List -->
+                    <div class="lg:w-7/12">
+                        <h3 class="text-3xl font-extrabold mb-10 text-black">Why Choose Bird Divert™</h3>A
+                        <ul class="space-y-6">
+                            <li class="flex gap-4">
+                                <div class="mt-1 flex-shrink-0 w-6 h-6">
+                                    <img src="Images/game-icons_hummingbird.png" alt="Handshake"
+                                        class="w-full h-full object-contain"
+                                        onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
                                 </div>
-                            </div>
-                        </div>
+                                <div>
+                                    <h4 class="font-bold text-[15px] text-black">Discreet & Effective</h4>
+                                    <p class="text-[13px] text-gray-500 mt-1 font-medium">Subtle yet highly effective,
+                                        proven to reduce bird-glass collisions by up to 75%.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4">
+                                <div class="mt-1 flex-shrink-0 w-6 h-6">
+                                    <img src="Images/mdi_eye.png" alt="Icon" class="w-full h-full object-contain"
+                                        onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[15px] text-black">Aesthetic Appeal</h4>
+                                    <p class="text-[13px] text-gray-500 mt-1 font-medium">These UV markers blend
+                                        seamlessly with your building's design without affecting your views.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4">
+                                <div class="mt-1 flex-shrink-0 w-6 h-6">
+                                    <img src="Images/mdi_uv-ray.png" alt="Icon" class="w-full h-full object-contain"
+                                        onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[15px] text-black">Advanced UV Technology</h4>
+                                    <p class="text-[13px] text-gray-500 mt-1 font-medium">Uses 20-nanometer hollow glass
+                                        spheres to reflect UV light, helping birds recognize glass as a barrier.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4">
+                                <div class="mt-1 flex-shrink-0 w-6 h-6">
+                                    <img src="Images/material-symbols.png" alt="Tested"
+                                        class="w-full h-full object-contain"
+                                        onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[15px] text-black">Tested to Work</h4>
+                                    <p class="text-[13px] text-gray-500 mt-1 font-medium">Tested & approved by the
+                                        American Bird Conservancy (ABC), ensuring reliable protection.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4">
+                                <div class="mt-1 flex-shrink-0 w-6 h-6">
+                                    <img src="Images/safety-certificate-fill.png" alt="Icon"
+                                        class="w-full h-full object-contain"
+                                        onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[15px] text-black">Durable & Long-Lasting</h4>
+                                    <p class="text-[13px] text-gray-500 mt-1 font-medium">Built to withstand the
+                                        elements, Bird Divert will last for 10+ years and is backed by a 6-year
+                                        warranty.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4">
+                                <div class="mt-1 flex-shrink-0 w-6 h-6">
+                                    <img src="Images/gridicons.png" alt="Icon" class="w-full h-full object-contain"
+                                        onerror="this.src='https://placehold.co/100x100/e2e8f0/64748b?text=Icon'">
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[15px] text-black">Solutions for Residential and
+                                        Commercial buildings</h4>
+                                    <p class="text-[13px] text-gray-500 mt-1 font-medium">Ideal for a range of large
+                                        properties, including office complexes, educational institutions, healthcare
+                                        facilities, and more.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right: Images -->
+                    <div class="lg:w-5/12 mt-10 lg:mt-0 flex justify-center lg:justify-end items-center">
+                        <img src="Images/why.png" alt="Why Choose Bird Divert Installation"
+                            class="w-full max-w-[450px] object-contain rounded-2xl shadow-xl"
+                            onerror="this.src='https://images.unsplash.com/photo-1504307651254-35680f356f58?auto=format&fit=crop&q=80'">
                     </div>
                 </div>
             </div>
 
             <!-- UV Gallery -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="gallery-item group border border-ff-light shadow-md">
-                    <img src="Images/RMFOne.jpg"
-                        alt="Corporate HQ">
-                    <div
-                        class="absolute inset-0 bg-ff-blue/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                        <span class="text-white font-800 text-xs tracking-widest uppercase">Corporate</span>
-                    </div>
+                    <img src="Images/RMFOne.jpg" alt="Corporate HQ"
+                        onerror="this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80'">
                 </div>
                 <div class="gallery-item group border border-ff-light shadow-md">
-                    <img src="Images/RMFTwo.jpg"
-                        alt="Institutions">
-                    <div
-                        class="absolute inset-0 bg-ff-blue/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                        <span class="text-white font-800 text-xs tracking-widest uppercase">Institutional</span>
-                    </div>
+                    <img src="Images/RMFTwo.jpg" alt="Institutions"
+                        onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80'">
                 </div>
                 <div class="gallery-item group border border-ff-light shadow-md">
-                    <img src="Images/RMFThree.jpg"
-                        alt="High End">
-                    <div
-                        class="absolute inset-0 bg-ff-blue/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                        <span class="text-white font-800 text-xs tracking-widest uppercase">Luxury Residential</span>
-                    </div>
+                    <img src="Images/RMFThree.jpg" alt="High End"
+                        onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80'">
                 </div>
                 <div class="gallery-item group border border-ff-light shadow-md">
-                    <img src="Images/RMFFour.jpg"
-                        alt="Facade">
-                    <div
-                        class="absolute inset-0 bg-ff-blue/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                        <span class="text-white font-800 text-xs tracking-widest uppercase">Glass Facades</span>
-                    </div>
+                    <img src="Images/RMFFour.jpg" alt="Facade"
+                        onerror="this.src='https://images.unsplash.com/photo-1545082061-ce83ba20739e?auto=format&fit=crop&q=80'">
                 </div>
             </div>
+
         </div>
     </section>
 
